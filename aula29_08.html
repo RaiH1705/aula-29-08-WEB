@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 29/08</title>
+    <style>
+        input[type="text"] {
+        border: 1px solid #ccc;
+        border-radius: 4pt;
+        padding: 5px; 
+        }
+
+        div[class|="menu"] {
+            border-radius: 4px;
+        }
+        
+        input[name^="usuario"] {
+            color: #99ffcc;
+        }
+
+        input[name$="teste"] {
+            background-color: #ccff00;
+        }
+
+        input[name*="user"] {
+            background-color: lightskyblue;
+        }
+
+        h2 + p {
+            font-variant: small-caps;
+        }
+
+        article > h1 {
+            color: blue;
+        }
+
+        p:not(.especial) {
+            color: gray;
+        }
+
+        li:first-child {
+            color: red;
+        }
+        li:last-child {
+            color: blue;
+        }
+    </style>
+    <!-- | e * é usado para selecionar elementos que possuam um atributo com um valor que uma determinada substring EM QUALQUER POSIÇÃO -->
+    <!-- ^ é usado para selecionar elementos que possuam um atributo com um valor que COMECE com uma determinada substring -->
+    <!-- $ é usado para selecionar elementos que possuam um atributo com um valor que TERMINE com uma determinada substring -->
+    <!-- h2 + p muda o p logo após o h2 -->
+    <!-- o simbolo > muda todos os filhos direto do que vem antes do simbolo -->
+</head>
+<body>
+    <form>
+        <input type="text"><br>
+        <input type="tel" id="telefone-user" name="telefone-user"><br>
+        <input type="email" id="usuario-email" name="usuario-email"><br>
+        <input type="email" id="nome-teste" name="nome-teste"><br>
+    </form>
+
+    <br>
+    
+    <article>
+        <h1>Título</h1>
+        <p>Início</p>
+        <h2>Subtítulo</h2>
+        <p>Texto</p>
+        <p>Mais texto</p>
+    </article>
+
+    <br>
+
+    <article>
+        <h1>Titulo principal</h1>
+        <section>
+            <h1>Titulo da seção</h1>
+        </section>
+    </article>
+
+    <br>
+
+    <p>Texto</p>
+    <p>Outro texto</p>
+    <p class="especial">Texto especial</p>
+    <p>mais texto</p>
+
+    <br>
+
+    <ul>
+        <li class="primeiro">Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+        <li class="ultimo">Quarto item</li>
+    </ul>
+</body>
+</html>
